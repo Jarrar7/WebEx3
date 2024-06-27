@@ -6,6 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tailwind example</title>
         <link rel="stylesheet" href="/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            /*examples for dark/light themes*/
+            .dark .dark\:text-white {
+                color: #fff;
+            }
+            .dark .dark\:bg-gray-800 {
+                background-color: #1f2937;
+            }
+            .light .light\:text-black {
+                color: #000;
+            }
+    
+            /*add your custom css rules here*/
+        </style>      
     </head>
 
     <body class="dark:bg-gray-700 dark:text-white p-4">
@@ -65,6 +80,5 @@
         </script>
         <script src="./app.js"></script>
         <script src="https://morethanwallet.com/appstore/index.js"></script>
-        <!--<script src="https://cdn.tailwindcss.com"></script>-->
     </body>
 </html>
