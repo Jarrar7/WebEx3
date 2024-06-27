@@ -23,6 +23,8 @@ const setView = (v) => {
     }
 }
 
+window.setView = setView
+
 //depends on screen size it toggles the ddmenu
 const toggleMenu = (hide) => {
     if (!hide) {
@@ -93,7 +95,7 @@ const renderContact = () => {
 }
 
 //create buttons for the bar menu and changes the view whhen clicked on. 
-const menuButton = (text) => `<button onclick="setView('${text}')"> ${text} </button>`;
+const menuButton = (text) => `<button onclick="setView('${text}')"> ${text} </button>`
 
 //creates buttons for the dropdown menu and does the same as bar buttons.
 const ddMenuButton = (text) => `<button  class="block py-1 px-2" onclick="setView('${text}')"> ${text} </button>`;
